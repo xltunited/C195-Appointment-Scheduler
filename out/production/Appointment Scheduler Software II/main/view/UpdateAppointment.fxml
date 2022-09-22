@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="main.controller.UpdateAppointment"
+            prefHeight="600.0" prefWidth="800.0">
+    <children>
+        <Label layoutX="65.0" layoutY="73.0" text="Appointment ID" />
+        <TextField fx:id="appointmentIDField" disable="true" editable="false" layoutX="173.0" layoutY="69.0" />
+        <TextField fx:id="titleField" layoutX="173.0" layoutY="107.0" />
+        <TextField fx:id="descriptionField" layoutX="173.0" layoutY="148.0" />
+        <TextField fx:id="locationField" layoutX="173.0" layoutY="192.0" />
+        <TextField fx:id="typeField" layoutX="173.0" layoutY="235.0" />
+        <Label layoutX="123.0" layoutY="111.0" text="Title" />
+        <Label layoutX="85.0" layoutY="152.0" text="Description" />
+        <Label layoutX="101.0" layoutY="196.0" text="Location" />
+        <Label layoutX="119.0" layoutY="239.0" text="Type" />
+        <Label layoutX="495.0" layoutY="73.0" text="Date" />
+        <DatePicker fx:id="dateBox" layoutX="539.0" layoutY="69.0" />
+        <TextField fx:id="startTimeField" layoutX="540.0" layoutY="108.0" />
+        <TextField fx:id="endTimeField" layoutX="541.0" layoutY="148.0" />
+        <Label layoutX="375.0" layoutY="111.0" text="Star Time in format HH:MM" />
+        <Label layoutX="376.0" layoutY="152.0" text="End Time in format HH:MM" />
+        <ComboBox fx:id="contactBox" layoutX="540.0" layoutY="192.0" prefWidth="150.0" />
+        <ComboBox fx:id="customerBox" layoutX="540.0" layoutY="235.0" prefWidth="150.0" />
+        <ComboBox fx:id="userBox" layoutX="173.0" layoutY="281.0" prefWidth="150.0" />
+        <Label layoutX="105.0" layoutY="286.0" text="User ID" />
+        <Label layoutX="464.0" layoutY="196.0" text="Contact ID" />
+        <Label layoutX="453.0" layoutY="239.0" text="Customer ID" />
+
+        <Text fx:id="validationText" layoutX="50.0" layoutY="350.0">
+
+        </Text>
+        <Button layoutX="314.0" layoutY="540.0" mnemonicParsing="false" onAction="#updateAppointment" text="Save" />
+        <Button layoutX="469.0" layoutY="540.0" mnemonicParsing="false" onAction="#cancelUpdateAppointment" text="Cancel" />
+    </children>
+</AnchorPane>
